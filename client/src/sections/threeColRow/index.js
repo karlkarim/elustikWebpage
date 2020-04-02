@@ -5,14 +5,25 @@ import './index.css';
 const ThreeColRow = () => {
   return ( 
     
-    <section className='container'>
+    <section>
+      <div className='title'>Nahkhiirte uuringud</div>
+      <div className='content'>
       <ArticleCard
         title={'Kuidas nahkhiired tundi hilinesid.'}
         link={'link-to-page'}
         img={'image-link-here'}
       />
-      <ArticleCard />
-      <ArticleCard />
+      <ArticleCard
+        title={'Kuidas nahkhiired tundi hilinesid.'}
+        link={'link-to-page'}
+        img={'image-link-here'}
+      />
+      <ArticleCard
+        title={'Kuidas nahkhiired tundi hilinesid.'}
+        link={'link-to-page'}
+        img={'image-link-here'}
+      />
+      </div>
     </section>
    );
 }

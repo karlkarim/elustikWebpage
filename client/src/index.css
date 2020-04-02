@@ -7,7 +7,7 @@
   --danger: #F26674;
 }
 body {
-  margin: 0;
+  margin: 120px 0 0 0;
   font-family: neuzeit-grotesk, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,14 +16,18 @@ body {
 .title {
   font-size: 24px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 .text {
   font-weight: 16px;
   font-weight: 300;
 }
-.container {
+.content {
   display: flex;
-  height: 300px;
+  /* height: 300px; */
   flex-flow: row wrap;
   justify-content: space-evenly;
+}
+.container {
+  margin: 0 20px;
 }
