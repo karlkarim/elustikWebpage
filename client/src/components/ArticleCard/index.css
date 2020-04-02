@@ -1,0 +1,15 @@
+.article-card-root {
+  height: 170px;
+  width: 300px;
+  margin: 10px
+}
+.article-card-img {
+  margin-bottom: 11px;
+}
+.article-card-title a {
+  color: #82A796;
+  text-decoration: none;
+}
+.article-card-title a:visited {
+  color: #82A796;
+}

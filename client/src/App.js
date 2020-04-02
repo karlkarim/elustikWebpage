@@ -1,10 +1,11 @@
 import React from 'react';
-
+import ThreeColRow from './sections/threeColRow/index';
 
 function App() {
   return (
-    <div className="App">
-      Puhas Leht
+    <div className='containers'>
+      <ThreeColRow />
+    
     </div>
   );
 }
