@@ -1,13 +1,17 @@
 import React from 'react';
 import ThreeColRow from './sections/threeColRow/index';
-import Header from './components/header'
-import ArticleCard from './components/ArticleCard';
+import Header from './components/header';
+import TextField from './components/TextField/index';
+import EmailInput from './components/EmailInput/index';
+
 
 function App() {
   return (
     <>
       <Header/>
-      <ThreeColRow/>
+      <ThreeColRow />
+      <EmailInput/>
+      <TextField/>
     </>
   )
 }
