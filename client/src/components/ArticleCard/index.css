@@ -1,7 +1,7 @@
 .article-card-root {
   max-height: 170px;
   max-width: 300px;
-  margin: 20px; 
+  margin: 0 20px 84px 20px;
 }
 .article-card-img {
   margin-bottom: 11px;

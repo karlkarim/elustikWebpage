@@ -1,18 +1,18 @@
 import React from 'react';
 import ThreeColRow from './sections/threeColRow/index';
 import Header from './components/header';
-import TextField from './components/TextField/index';
-import EmailInput from './components/EmailInput/index';
+import PrevWork from './sections/previousWork';
+import ContactUs from './sections/contactUS';
 
 
 function App() {
   return (
-    <>
+    <div className='container'>
       <Header/>
       <ThreeColRow />
-      <EmailInput/>
-      <TextField/>
-    </>
+      <PrevWork />
+      <ContactUs />
+    </div>
   )
 }
 
