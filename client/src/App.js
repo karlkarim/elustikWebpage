@@ -7,12 +7,12 @@ import EmailInput from './components/EmailInput/index';
 
 function App() {
   return (
-    <div className='containers'>
+    <>
       <Header/>
       <ThreeColRow />
       <EmailInput/>
       <TextField/>
-    </div>
+    </>
   )
 }
 

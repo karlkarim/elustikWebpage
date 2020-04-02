@@ -6,12 +6,13 @@ const ArticleCard = ({img, title, link}) => {
   return (
   <div className='article-card-root'>
   <div className='article-card-img'>
-    <img src='https://picsum.photos/300/170' alt=''/>
+    <img src='https://picsum.photos/300/170' alt={img}/>
   </div>
   <div className='article-card-title title'>
-  <Link to={'Kuidas nahkhiired tundi hilinesid.'}>Kuidas nahkhiired tundi hilinesid.</Link>
+  <Link to={link}>{title}</Link>
   </div>
-  </div> );
+  </div>
+  );
 }
  
 export default ArticleCard;
