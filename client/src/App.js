@@ -1,14 +1,14 @@
 import React from 'react';
+import ThreeColRow from './sections/threeColRow/index';
 import Header from './components/header'
-
 
 function App() {
   return (
-    <div className="App">
+    <div className='containers'>
       <Header/>
-      Puhas Leht
+      <ThreeColRow />
     </div>
-  );
+  )
 }
 
 export default App;
