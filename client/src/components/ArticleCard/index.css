@@ -1,10 +1,12 @@
 .article-card-root {
   max-height: 170px;
   max-width: 300px;
-  margin: 0 20px 84px 20px;
+  margin: 0 auto 84px auto;
 }
-.article-card-img {
+.article-card-img img{
   margin-bottom: 11px;
+  max-height: 170px;
+  max-width: 300px;
 }
 .article-card-title a {
   color: #82A796;
