@@ -1,0 +1,23 @@
+.profile-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.profile-container{
+    padding: 0 16px
+}
+
+.profile-container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.profile-title {
+    color: grey;
+}
+.profile-img{
+    width: 50%;
+    margin-left: 25%;
+}
+
+
