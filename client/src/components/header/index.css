@@ -32,6 +32,7 @@
   .header-right {
     float: right;
     font-weight: bold;
+    margin-right: 115px;
   }
   
   @media screen and (max-width: 500px) {
