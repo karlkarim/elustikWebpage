@@ -3,6 +3,7 @@
     background-color: #dddf70;
     padding: 20px 10px;
     position: absolute;
+    height: 50px;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,17 +23,27 @@
   .header a.logo {
     font-size: 40px;
     font-weight: bold;
-  
+
+  }
+
+  .elustik-logo{
+    height: 20px;
+    width: 20px;
   }
   
   .header-right a:hover {
     border: 1px solid white;
   }
+
+  .logologo{
+    
+    height: 55px;
+  }
   
   .header-right {
     float: right;
     font-weight: bold;
-    margin-right: 115px;
+    margin-right: 100px;
   }
   
   @media screen and (max-width: 500px) {
