@@ -3,6 +3,7 @@ import axios from 'axios';
 import './index.css';
 import { Link } from 'react-router-dom';
 import { apiURL } from '../../conf/apiConf';
+import elustikLogo from '../../elustik_logo.png'
 
 
 const Header = () => {
@@ -22,6 +23,7 @@ useEffect(() => {
 console.log(links)
     return(
         <div className='header'>
+        <img src={elustikLogo} className='logologo'/>
         <a href='#default' className='logo'>Elustik</a>
         <div className='header-right'>
             {links.map(link => (
