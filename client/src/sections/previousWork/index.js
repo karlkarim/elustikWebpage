@@ -16,7 +16,7 @@ const PrevWork = () => {
   useEffect(() => {
     getPrevWork();
   },[])
-
+console.log(prevWork)
   return ( 
     <section>
       <div className='title'>Tehtud tööd</div>
@@ -24,8 +24,8 @@ const PrevWork = () => {
         {prevWork.map(work => (
         <ArticleCard
           key={work.id}
-          title={work.title}
-          link={work.slug}
+          title={work.Title}
+          link={work.Slug}
           img={work.main.url}
         />
         ))}
