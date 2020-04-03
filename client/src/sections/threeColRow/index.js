@@ -29,7 +29,7 @@ const ThreeColRow = () => {
         <ArticleCard
         title={uuring.title}
         link={uuring.slug}
-        img={apiURL+uuring.main.url}
+        img={uuring.main.url}
       />
       ))}
       </div>
