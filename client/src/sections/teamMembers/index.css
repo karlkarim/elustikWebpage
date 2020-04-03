@@ -1,16 +1,16 @@
 .team-column{
-    float: left;
-  width: 33.3%;
+  max-width: 300px;
+    margin: 0 auto 84px auto;
   margin-bottom: 16px;
   padding: 0 8px;
 }
 
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
     .team-column {
       width: 100%;
       display: block;
     }
-}
+} */
 
 .members-box{
     box-sizing: border-box;

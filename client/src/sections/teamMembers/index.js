@@ -18,13 +18,11 @@ const TeamMembers = () => {
     useEffect(()=> {
         getMembers()
     },[])
-    console.log(members);
+
     return(
         <section>
             <div className='title'>Meeskond</div>
                 <div className='content'>
-                    <div className='members-box'>
-                    <div className='team-row'>
                         {members.map(member => (
                         <div key={member.id}className='team-column'>
                             <ProfileCard
@@ -38,8 +36,6 @@ const TeamMembers = () => {
                         ))
                         }
                     </div>
-                    </div>
-                </div>    
         </section>
     )
 }

@@ -7,8 +7,8 @@ const ProfileCard = ({name,email,tel, desc,img}) => {
     return(
         
         <div className="profile-card">
-            <img className='profile-img' src={img} alt="Rauno"/>
-            <div class="profile-container">
+            <img className='profile-img' src={img} alt={name}/>
+            <div className="profile-container">
                 <h2>{name}</h2>
                 <h3>{desc}</h3>
                 <p>E-mail: {email}</p>

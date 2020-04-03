@@ -20,7 +20,7 @@ const Header = () => {
 useEffect(() => {
     getNavLinks()
 },[])
-console.log(links)
+
     return(
         <div className='header'>
         <img src={elustikLogo} className='logologo'/>

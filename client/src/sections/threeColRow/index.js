@@ -19,7 +19,7 @@ const ThreeColRow = () => {
   useEffect(() => {
     getUuringud();
   }, [])
-  console.log(uuringud)
+
   return ( 
     
     <section>
@@ -27,6 +27,7 @@ const ThreeColRow = () => {
       <div className='content'>
       {uuringud.map(uuring => (
         <ArticleCard
+        key={uuring.id}
         title={uuring.title}
         link={uuring.slug}
         img={uuring.main.url}
