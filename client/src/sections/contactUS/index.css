@@ -1,0 +1,22 @@
+
+
+.contactUs-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactUs-form .button-general {
+    width: 15%;
+}
+
+.contactUs-form .email-input{
+    margin-bottom: 5px;
+    width: 35%;
+    border-color: #393A44;
+}
+
+.contactUs-form textarea{
+    border-color: #393A44;
+}
+
