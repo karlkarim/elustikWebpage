@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css'
-import raunoVunts from '../../assets/img/rauno_vuntsiga.jpg'
+
 
 const ProfileCard = ({name,email,tel, desc,img}) => {
 
