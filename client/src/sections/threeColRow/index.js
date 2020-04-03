@@ -1,28 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ArticleCard from '../../components/ArticleCard/index';
+import { apiURL } from '../../conf/apiConf';
+import axios from 'axios';
 import './index.css';
 
 const ThreeColRow = () => {
+  const [uuringud, setUuringud] = useState([]);
+
+  const getUuringud = async () => {
+    try {
+      const uuringud = await axios.get(`${apiURL}/uuringuds`);
+      setUuringud(uuringud.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    getUuringud();
+  }, [])
+  console.log(uuringud)
   return ( 
     
     <section>
       <div className='title'>Nahkhiirte uuringud</div>
       <div className='content'>
-      <ArticleCard
-        title={'Kuidas nahkhiired tundi hilinesid.'}
-        link={'link-to-page'}
-        img={'image-link-here'}
+      {uuringud.map(uuring => (
+        <ArticleCard
+        title={uuring.title}
+        link={uuring.slug}
+        img={apiURL+uuring.main.url}
       />
-      <ArticleCard
-        title={'Kuidas nahkhiired tundi hilinesid.'}
-        link={'link-to-page'}
-        img={'image-link-here'}
-      />
-      <ArticleCard
-        title={'Kuidas nahkhiired tundi hilinesid.'}
-        link={'link-to-page'}
-        img={'image-link-here'}
-      />
+      ))}
       </div>
     </section>
    );
