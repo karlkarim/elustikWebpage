@@ -22,7 +22,12 @@
   .header a.logo {
     font-size: 40px;
     font-weight: bold;
-  
+
+  }
+
+  .elustik-logo{
+    height: 20px;
+    width: 20px;
   }
   
   .header-right a:hover {
@@ -32,7 +37,7 @@
   .header-right {
     float: right;
     font-weight: bold;
-    margin-right: 115px;
+    margin-right: 100px;
   }
   
   @media screen and (max-width: 500px) {
