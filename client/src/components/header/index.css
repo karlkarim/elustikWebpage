@@ -1,4 +1,7 @@
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     overflow: hidden;
     background-color: #dddf70;
     position: fixed;
@@ -9,7 +12,7 @@
   }
   
   .header a {
-    float: left;
+    
     color: white;
     text-align: center;
     padding: 12px;
@@ -17,6 +20,15 @@
     font-size: 20px; 
     line-height: 25px;
     border-radius: 4px;
+  }
+
+  .header-left{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 100px;
+    font-weight: bold;
+    
   }
   
   .header a.logo {
