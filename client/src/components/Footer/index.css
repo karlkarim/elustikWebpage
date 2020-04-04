@@ -2,5 +2,22 @@
   display: flex;
   justify-content: space-around;
   background-color: #dddf70;
+  padding: 25px;
 
+}
+
+.footer-col img {
+  height: 50px;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cp {
+  display: flex;
+  justify-content: center;
+  background-color: #dddf70;
+  font-size: 10.75px;
+  line-height: 14px;
+  padding-top: 25px;
 }

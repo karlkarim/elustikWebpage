@@ -9,11 +9,13 @@ const ContactUs = () => {
     <section>
       <div className='title'>Võta ühendust</div>
       <div className='content'>
-      <form className='contactUs-form'>
+        <div className='contactUs-form'>
+      <form>
       <EmailInput />
       <TextField />
-      <ButtonB label='Saada'/>
       </form>
+      <ButtonB label='Saada'/>
+        </div>
       </div>
     </section>
    );

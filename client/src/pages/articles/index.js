@@ -22,7 +22,7 @@ const Articles = ({match, location}) => {
   <title>{settings.siteName}</title>
     </Helmet>
     <section>
-      <h1>Artikklid</h1>
+      <div className='title'>Artikklid</div>
       <div className='content'>
     {articles.map(article => (
       <ArticleCard

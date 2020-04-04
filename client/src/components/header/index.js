@@ -8,8 +8,11 @@ import './index.css';
 
 const Header = () => {
     let history = useHistory();
-    let siteSettings = localStorage.getItem('site-data');
-    let sitename = JSON.parse(siteSettings)[0].siteName;
+    const [title, setTitle] = useState();
+    const getTitle = () => {
+        const siteName = localStorage.getItem('site-data');
+        setTitle(JSON.parse(siteName)[0].logo.url)
+    }
     const handleClick = () => {
         history.push("/");
     }
@@ -24,16 +27,15 @@ const Header = () => {
       }
 
 useEffect(() => {
-    getNavLinks()
+    getNavLinks();
+    getTitle();
 },[])
 
     return(
         <div className='header'>
-        <div className='header-left'>
-            {sitename}  
+        <div onClick={() => handleClick()} className='header-left'>
         <img
-            onClick={() => handleClick()}
-            src={elustikLogo}
+            src={title}
             className='logologo'
             alt='Elustik logo'
         />

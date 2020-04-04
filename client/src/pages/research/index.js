@@ -27,7 +27,7 @@ const Research = ({match}) => {
     {research.map(r => (
         <div className='article-root'>
         <img src={r.main.url} alt={r.title} />
-        <h1>{r.title}</h1>
+        <div className='title'>{r.title}</div>
         <div className='article-text'>{r.content}</div>
         </div>
     ))}

@@ -6,7 +6,7 @@ const HeroPage = () => {
     return(
         <div className='hero-page'>
             <div className='hero-title'>OÜ Elustik</div>
-            <h1>Meie tegeleme sellega ise</h1>
+            <div className='title'>Meie tegeleme sellega ise</div>
             <p>Võta meiga ühendust ja tuleme külla</p>
         </div>
     )

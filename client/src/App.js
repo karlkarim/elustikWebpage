@@ -12,8 +12,6 @@ import PrevWork from './sections/previousWork/index';
 import PrevWorks from './pages/prevWorks/index';
 
 
-
-
 function App() {
   return (
     <>
