@@ -4,7 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import { getSettings } from './conf/siteSettings';
+getSettings()
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
