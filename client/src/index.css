@@ -46,3 +46,15 @@ section {
     flex-direction: column;
   }
 }
+.article-root {
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-root img {
+  max-width: 690px;
+}
+.article-text {
+  margin: 0 5%;
+}

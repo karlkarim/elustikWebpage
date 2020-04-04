@@ -22,12 +22,17 @@ const Research = ({match}) => {
     <Helmet>
   <title>{settings.siteName} | {slug}</title>
     </Helmet>
+    <section>
+      <div className='content'>
     {research.map(r => (
-      <div>
+        <div className='article-root'>
+        <img src={r.main.url} alt={r.title} />
         <h1>{r.title}</h1>
-        {r.content}
-      </div>
+        <div className='article-text'>{r.content}</div>
+        </div>
     ))}
+    </div>
+    </section>
     </>
    );
 }

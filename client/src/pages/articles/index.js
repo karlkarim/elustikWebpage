@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { settings } from '../../conf/siteSettings';
 import { apiURL } from '../../conf/apiConf';
 import axios from 'axios';
+import ArticleCard from '../../components/ArticleCard/index';
 
 const Articles = ({match, location}) => {
   const [articles, setArticles] = useState([]);
@@ -20,13 +21,18 @@ const Articles = ({match, location}) => {
     <Helmet>
   <title>{settings.siteName}</title>
     </Helmet>
+    <section>
+      <h1>Artikklid</h1>
+      <div className='content'>
     {articles.map(article => (
-      <div>
-        <h1><Link to={`/articles/${article.title}`}>{article.title}</Link></h1>
-        <img src={article.main.url} alt={article.title} />
-        <p>{article.post}</p>
-      </div>
-    ))}
+      <ArticleCard
+        title={article.title}
+        img={article.main.url}
+        link={`/articles/${article.id}/${article.slug}`}
+      />
+        ))}
+        </div>
+    </section>
     </>
    );
 }

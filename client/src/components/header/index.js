@@ -8,14 +8,15 @@ import './index.css';
 
 const Header = () => {
     let history = useHistory();
-
+    let siteSettings = localStorage.getItem('site-data');
+    let sitename = JSON.parse(siteSettings)[0].siteName;
     const handleClick = () => {
         history.push("/");
     }
     const [links, setLinks] = useState([])
     const getNavLinks = async () => {
         try {
-          const response = await axios.get(`${apiURL}/navigations`);
+          const response = await axios.get(`${apiURL}/navigations?_sort=position`);
           setLinks(response.data);
         } catch (error) {
           console.error(error);
@@ -28,7 +29,8 @@ useEffect(() => {
 
     return(
         <div className='header'>
-        <div className='header-left'> Elustik    
+        <div className='header-left'>
+            {sitename}  
         <img
             onClick={() => handleClick()}
             src={elustikLogo}
@@ -38,7 +40,7 @@ useEffect(() => {
         </div>
         <div className='header-right'>
             {links.map(link => (
-                <Link key={link.id} to={link.url}>{link.Label}</Link>
+                <Link key={link.id} to={`/${link.url}`}>{link.Label}</Link>
             ))}
         </div>
         </div>
