@@ -1,23 +1,35 @@
 import React from 'react';
-import ThreeColRow from './sections/threeColRow/index';
+import { Switch, Route } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 import Header from './components/header';
-import PrevWork from './sections/previousWork';
-import ContactUs from './sections/contactUS';
-import TeamMembers from './sections/teamMembers/index'
 import Footer from './components/Footer/index';
+import Articles from './pages/articles';
+import Home from './pages/home/index';
+import Article from './pages/article/index';
+import Researches from './pages/researches/index';
+import Research from './pages/research';
+import PrevWork from './sections/previousWork/index';
+import PrevWorks from './pages/prevWorks/index';
 
 
 
 function App() {
   return (
     <>
-      <Header/>
-    <div className='container'>
-      <ThreeColRow />
-      <PrevWork />
-      <ContactUs />
-      <TeamMembers/>
-    </div>
+    <Helmet>
+      <title>test</title>
+      <meta name='description' content='blablabla' />
+    </Helmet>
+    <Header/>
+      <Switch>
+        <Route path='/researches/:id/:slug/' component={Research} />
+        <Route path='/researches/' component={Researches} />
+        <Route path='/prev-works/:id/:slug' component={PrevWork} />
+        <Route path='/prev-works/' component={PrevWorks} />
+        <Route path='/articles/:id/:slug' component={Article} />
+        <Route path='/articles' component={Articles} />
+        <Route path='/' component={Home} />
+      </Switch>
       <Footer />
     </>
   )
