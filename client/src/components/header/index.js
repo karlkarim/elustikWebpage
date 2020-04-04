@@ -28,12 +28,14 @@ useEffect(() => {
 
     return(
         <div className='header'>
+        <div className='header-left'> Elustik    
         <img
             onClick={() => handleClick()}
             src={elustikLogo}
             className='logologo'
             alt='Elustik logo'
         />
+        </div>
         <div className='header-right'>
             {links.map(link => (
                 <Link key={link.id} to={link.url}>{link.Label}</Link>
