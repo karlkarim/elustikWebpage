@@ -28,6 +28,7 @@ body::-webkit-scrollbar {
 }
 .content {
   display: flex;
+  flex-wrap: wrap;
 }
 .container {
   flex-direction: row;
