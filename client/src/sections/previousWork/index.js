@@ -25,7 +25,7 @@ console.log(prevWork)
         <ArticleCard
           key={work.id}
           title={work.Title}
-          link={work.Slug}
+          link={`/works/${work.id}/${work.Slug}`}
           img={work.main.url}
         />
         ))}

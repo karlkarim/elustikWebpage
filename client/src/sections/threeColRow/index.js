@@ -29,7 +29,7 @@ const ThreeColRow = () => {
         <ArticleCard
         key={uuring.id}
         title={uuring.title}
-        link={uuring.slug}
+        link={`/researches/${uuring.id}/${uuring.slug}`}
         img={uuring.main.url}
       />
       ))}
