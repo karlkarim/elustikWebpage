@@ -12,5 +12,21 @@
     margin-bottom: 5px;
     width: 35%;
 }
-
+.toast-message {
+    position: fixed;
+    z-index: 1300;
+    right: 20%;
+    bottom: 50%;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+    padding-top: 40px;
+    background-color: #DEE170;
+    color: #fff;
+    font-size: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.is-closed {
+    display: none;
+}
 
