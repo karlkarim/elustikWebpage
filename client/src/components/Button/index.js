@@ -4,7 +4,7 @@ import './index.css'
 const ButtonB = ({label, onClick}) => {
 
     return(
-    <button className='button-general'>{label}</button>
+    <button className='button-general' onClick={onClick}>{label}</button>
     )
 }
 export default ButtonB;

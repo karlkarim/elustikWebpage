@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './index.css';
 const Footer = () => {
+  // eslint-disable-next-line no-unused-vars
   const [siteData, setSiteData] = useState([]);
   const [logo, setLogo] = useState([]);
   const getSiteData = () => {
