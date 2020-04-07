@@ -1,11 +1,17 @@
 import React from 'react';
 import './index.css';
 
-const EmailInput = () => {
+const InputField = ({inputValue, inputType, inputPlaceH, onchange}) => {
 
     return(
-        <input type='email' className='email-input' placeholder='E-mail'></input>
+        <input 
+        type={inputType}
+        className='email-input'
+        value={inputValue}
+        placeholder={inputPlaceH}
+        onChange={onchange}
+        />
     )
 }
 
-export default EmailInput;
+export default InputField;

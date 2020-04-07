@@ -1,10 +1,10 @@
 import React from 'react';
 import './index.css';
 
-const TextField = () => {
+const TextField = ({onchange, children, textPlaceholder}) => {
 
     return(
-        <textarea placeholder='Sõnum siia...'></textarea>
+    <textarea onChange={onchange} placeholder={textPlaceholder}>{children}</textarea>
     )
 }
 
