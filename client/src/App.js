@@ -8,7 +8,7 @@ import Home from './pages/home/index';
 import Article from './pages/article/index';
 import Researches from './pages/researches/index';
 import Research from './pages/research';
-import PrevWork from './sections/previousWork/index';
+import PrevWork from './pages/prevWork/index';
 import PrevWorks from './pages/prevWorks/index';
 
 
@@ -23,8 +23,8 @@ function App() {
       <Switch>
         <Route path='/researches/:id/:slug/' component={Research} />
         <Route path='/researches/' component={Researches} />
-        <Route path='/prev-works/:id/:slug' component={PrevWork} />
-        <Route path='/prev-works/' component={PrevWorks} />
+        <Route path='/works/:id/:slug' component={PrevWork} />
+        <Route path='/works/' component={PrevWorks} />
         <Route path='/articles/:id/:slug' component={Article} />
         <Route path='/articles' component={Articles} />
         <Route path='/' component={Home} />
