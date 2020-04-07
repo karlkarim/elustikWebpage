@@ -2,8 +2,13 @@ import React, { useState, useEffect } from 'react';
 import ArticleCard from '../../components/ArticleCard';
 import axios from 'axios';
 import { apiURL } from '../../conf/apiConf';
+import { useHistory } from "react-router-dom";
+
 
 const PrevWork = () => {
+  let history = useHistory();
+
+
   const [prevWork, setPrevWork] = useState([]);
   const getPrevWork = async () => {
     try {
@@ -13,13 +18,20 @@ const PrevWork = () => {
       console.log(error);
     }
   }
+
+  const handleClick = () => {
+    history.push("/works");
+    console.log('clicked');
+}
+ 
   useEffect(() => {
     getPrevWork();
   },[])
 console.log(prevWork)
   return ( 
     <section>
-      <div className='title'>Tehtud tööd</div>
+      <div onClick={() => handleClick()} style={{cursor: "pointer"}} className='title'>Tehtud tööd</div>
+      
       <div className='content'>
         {prevWork.map(work => (
         <ArticleCard
