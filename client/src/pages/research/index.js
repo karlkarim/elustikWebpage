@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { settings } from '../../conf/siteSettings';
 import { apiURL } from '../../conf/apiConf';
 import axios from 'axios';
+import ReactMarkdown from 'react-markdown'
 
 const Research = ({match}) => {
   const [research, setResearch] = useState([])
@@ -27,8 +28,9 @@ const Research = ({match}) => {
     {research.map(r => (
         <div className='article-root'>
         <img src={r.main.url} alt={r.title} />
-        <div className='title'>{r.title}</div>
-        <div className='article-text'>{r.content}</div>
+        <div className='article-title'>{r.title}</div>
+        <ReactMarkdown source={r.content} escapeHtml={false} className='article-text' />
+        {/* <div className='article-text'>{r.content}</div> */}
         </div>
     ))}
     </div>

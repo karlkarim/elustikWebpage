@@ -3,9 +3,18 @@ import { Helmet } from 'react-helmet';
 import { settings } from '../../conf/siteSettings';
 import { apiURL } from '../../conf/apiConf';
 import axios from 'axios';
+import ReactMarkdown from 'react-markdown'
+
+
+
+
+
+
 
 const PrevWork = ({match}) => {
 
+  const input = '# This is a header\n\nAnd this is a paragraph'
+  
   const [work, setWork] = useState([])
   let slug = match.params.slug;
   let workId = match.params.id;
@@ -25,11 +34,13 @@ const PrevWork = ({match}) => {
     </Helmet>
     <section>
       <div className='content'>
+      
     {work.map(w => (
         <div className='article-root'>
         <img src={w.main.url} alt={w.title} />
-        <div className='title'>{w.title}</div>
-        <div className='article-text'>{w.content}</div>
+        <div className='article-title'>{w.Title}</div>
+        <ReactMarkdown source={w.content} escapeHtml={false} className='article-text' />
+        {/* <div className='article-text'>{w.content}</div> */}
         </div>
     ))}
     </div>

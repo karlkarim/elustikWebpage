@@ -57,5 +57,12 @@ section {
   max-width: 690px;
 }
 .article-text {
-  margin: 0 5%;
+  margin: 0 10%;
+}
+
+.article-title{
+  font-size: 35px;
+    margin: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
