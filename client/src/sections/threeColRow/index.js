@@ -23,7 +23,7 @@ const ThreeColRow = () => {
   return ( 
     
     <section>
-      <div className='title'>Nahkhiirte uuringud</div>
+      <div className='title homepage-titles'>Nahkhiirte uuringud</div>
       <div className='content'>
       {uuringud.map(uuring => (
         <ArticleCard

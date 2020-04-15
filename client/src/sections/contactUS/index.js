@@ -38,7 +38,7 @@ const ContactUs = () => {
     <section>
       
       <div className={`toast-message ${emailFeedback.status ? '': 'is-closed'}`}>{emailFeedback.msg}</div>
-      <div className='title'>Võta ühendust</div>
+      <div className='title homepage-titles'>Võta ühendust</div>
       <div className='content'>
         <div className='contactUs-form'></div>
       <form onSubmit={(e) => e.preventDefault()}>

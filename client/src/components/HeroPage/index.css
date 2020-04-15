@@ -1,10 +1,26 @@
 .hero-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
     text-align: center;
     color: #393A44;
 }
 
 .hero-title{
     font-size: 60px;
-    font-weight: 400;
+    font-weight: bolder;
     letter-spacing: 1px;
+    font-family: 'Poiret One', cursive;
+}
+
+.hero-title p {
+    font-size: medium;
+    font-family: neuzeit-grotesk, sans-serif;
+    font-weight: 200;
+}
+
+.hero-page img{
+    width:350px;
 }
