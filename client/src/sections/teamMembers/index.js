@@ -21,7 +21,7 @@ const TeamMembers = () => {
 
     return(
         <section>
-            <div className='title'>Meeskond</div>
+            <div className='title homepage-titles'>Meeskond</div>
                 <div className='content'>
                         {members.map(member => (
                         <div key={member.id}className='team-column'>

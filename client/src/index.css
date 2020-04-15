@@ -12,6 +12,7 @@ body {
   font-family: neuzeit-grotesk, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 }
 
 body::-webkit-scrollbar {
@@ -40,7 +41,7 @@ body::-webkit-scrollbar {
   margin: 0 auto;
 }
 section {
-  margin: 30px 25px;
+  margin: 10px 25px;
 }
 @media screen and (max-width: 650px) {
   .content {
@@ -54,7 +55,7 @@ section {
 }
 
 .article-root img {
-  max-width: 690px;
+  max-width: 350px;
 }
 .article-text {
   margin: 0 10%;
@@ -65,4 +66,9 @@ section {
     margin: 20px;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.homepage-titles {
+  font-size: 30px;
+  margin-bottom: 20px;
 }

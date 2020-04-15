@@ -2,17 +2,20 @@
   max-height: 170px;
   max-width: 300px;
   margin: 0 auto 84px auto;
+  
 }
+
+.article-card-img{
+  text-align: center;
+}
+
 .article-card-img img{
   margin-bottom: 11px;
   max-height: 170px;
   max-width: 300px;
 }
 .article-card-title a {
-  color: #82A796;
+  color: #7d7b77;
   text-decoration: none;
   
-}
-.article-card-title a:visited {
-  color: #82A796;
 }

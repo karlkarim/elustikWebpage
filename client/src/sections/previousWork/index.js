@@ -30,7 +30,7 @@ const PrevWork = () => {
 console.log(prevWork)
   return ( 
     <section>
-      <div onClick={() => handleClick()} style={{cursor: "pointer"}} className='title'>Tehtud tööd</div>
+      <div onClick={() => handleClick()} style={{cursor: "pointer"}} className='title homepage-titles'>Tehtud tööd</div>
       
       <div className='content'>
         {prevWork.map(work => (
