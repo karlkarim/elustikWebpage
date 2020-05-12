@@ -5,9 +5,11 @@ const Footer = () => {
   const [siteData, setSiteData] = useState([]);
   const [logo, setLogo] = useState([]);
   const getSiteData = () => {
-    const siteName = localStorage.getItem('site-data');
-    setSiteData(JSON.parse(siteName)[0])
-    setLogo(JSON.parse(siteName)[0].logo.url)
+    setTimeout(() => {
+      const siteName = localStorage.getItem('site-data');
+      setSiteData(JSON.parse(siteName)[0])
+      setLogo(JSON.parse(siteName)[0].logo.url)
+    }, 1000);
 }
 useEffect(() => {
   getSiteData()
@@ -15,7 +17,6 @@ useEffect(() => {
   return ( 
     <>
     <div className='footer-root'>
-
         <div className='footer-col'>
         <img src={logo} alt=''/>
         </div>
