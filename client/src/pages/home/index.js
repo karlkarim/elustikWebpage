@@ -6,14 +6,16 @@ import TeamMembers from '../../sections/teamMembers/index';
 import HeroPage from '../../sections/heroPage/index';
 
 const Home = () => {
-  return ( 
-    <div className='container'>
+  return (
+    <>
       <HeroPage/>
+    <div className='container'>
       <ThreeColRow />
       <PrevWork />
       <ContactUs />
       <TeamMembers/>
     </div>
+    </>
    );
 }
  

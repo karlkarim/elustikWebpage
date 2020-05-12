@@ -4,9 +4,9 @@ import HeroPage from '../../components/HeroPage/index'
 
 const HeroSection = () => {
   return ( 
-    <section>
+    // <section>
       <HeroPage/>
-    </section>
+    // </section>
    );
 }
  

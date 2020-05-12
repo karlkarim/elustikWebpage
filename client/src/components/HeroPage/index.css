@@ -4,8 +4,11 @@
     justify-content: center;
     flex-direction: row-reverse;
     margin-bottom: 50px;
+    width: 100%;
+    padding: 40px;
     text-align: center;
     color: #393A44;
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
 }
 
 .hero-title{
@@ -22,5 +25,5 @@
 }
 
 .hero-page img{
-    width:350px;
+    width:250px;
 }
