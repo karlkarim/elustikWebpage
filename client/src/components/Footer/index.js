@@ -17,6 +17,8 @@ useEffect(() => {
   return ( 
     <>
     <div className='footer-root'>
+      <div style={{display:'flex', justifyContent:'space-around'}}>
+
         <div className='footer-col'>
         <img src={logo} alt=''/>
         </div>
@@ -37,6 +39,7 @@ useEffect(() => {
         </div>
       </div>
       <div className='cp'>©2020 Elustik OÜ. All rights reserved.</div>
+      </div>
       </>
    );
 }

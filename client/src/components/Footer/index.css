@@ -1,9 +1,10 @@
 .footer-root {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   background-color: #dddf70;
   padding: 25px;
-
+  width: 100%;
+  background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
 }
 
 .footer-col img {
@@ -16,7 +17,8 @@
 .cp {
   display: flex;
   justify-content: center;
-  background-color: #dddf70;
+  /* background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%); */
+  /* width: inherit; */
   font-size: 10.75px;
   line-height: 14px;
   padding-top: 25px;

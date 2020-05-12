@@ -35,6 +35,7 @@ useEffect(() => {
 },[])
 
     return(
+        <div style={{position: 'relative'}}>
         <div className='header'>
         <div onClick={() => handleClick()} className='header-left'>
             {title ? 
@@ -49,6 +50,7 @@ useEffect(() => {
             {links.map(link => (
                 <Link key={link.id} to={`/${link.url}`}>{link.Label}</Link>
             ))}
+        </div>
         </div>
         </div>
     )
